@@ -39,3 +39,4 @@ fn train<P: AsRef<Path>>(save_dir: P) -> Result<(), Box<dyn Error>> {
         error_squared.clone().into(),
         MinimizeOptions::default().with_variables(&variables),
     )?;
+}
